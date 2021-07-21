@@ -12,7 +12,7 @@ class TestSuite : public QObject
 public:
     explicit TestSuite();
 
-    static QVector<QObject*> suites_;
+    inline static QVector<QObject*> suites_;
 };
 
 #endif // TESTSUITE_H
