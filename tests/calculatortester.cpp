@@ -11,6 +11,7 @@ private slots:
     void testAddition();
     void testSubtraction();
     void testDivision();
+    void testMultiplication();
 };
 
 void CalculatorTester::testAddition()
@@ -32,6 +33,14 @@ void CalculatorTester::testDivision()
    double result = Calculator::division(2.5, 2.5);
 
    QCOMPARE(result, 1.0);
+}
+
+
+void CalculatorTester::testMultiplication()
+{
+   double result = Calculator::multiplication(3.0, 2.1);
+
+   QCOMPARE(result, 6.3);
 }
 
 static CalculatorTester calcInstance;
