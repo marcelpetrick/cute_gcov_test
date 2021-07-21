@@ -1,3 +1,5 @@
+CONFIG += cpp17
+
 QT       += core testlib
 
 QT       -= gui
